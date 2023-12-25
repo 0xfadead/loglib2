@@ -5,7 +5,7 @@ LIB_OUT_DIR ?= lib
 OBJS += $(SOURCE_DIR)/llib.o
 HEADER ?= llib.h
 
-LIB_OUT ?= $(LIB_OUT_DIR)/llib.a
+LIB_OUT ?= $(LIB_OUT_DIR)/libllib.a
 HEADER_SRC ?= $(SOURCE_DIR)/$(HEADER)
 HEADER_OUT ?= $(HEADER_OUT_DIR)/$(HEADER)
 
