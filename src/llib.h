@@ -62,7 +62,7 @@ void default_log(const char *file, int line, const char *prefix, FILE *channel, 
       if (!(expr)) {                         \
         err("Assertion failed:\t%s", #expr); \
         err("Msg: `%s`", message);           \
+        abort();                             \
       }                                      \
-      abort();                               \
 
 #endif // !__LLIB_H__
