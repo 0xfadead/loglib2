@@ -60,7 +60,7 @@ void default_log(const char *file, int line, const char *prefix, FILE *channel, 
 
 #define log_assert(expr, message)            \
       if (!(expr)) {                         \
-        err("Assertion failed:\t%s", #expr); \
+        err("Assertion failed in %s:%i:\t%s", __FILE__, __LINE__, #expr); \
         err("Msg: `%s`", message);           \
         abort();                             \
       }                                      \
